@@ -1,20 +1,78 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 function Navbar() {
   return (
     <>
       <div className="bg-white h-22 w12 flex align-middle justify-between items-center">
         <h1 className="text-4xl font-semibold">
-        <span className='text-red-400'>N</span>
-            <span className='text-blue-400'>A</span><span className='text-yellow-400'>V</span><span className='text-blue-900'>B</span><span className='text-purple-600'>A</span><span className='text-green-600'>R</span>
+          <div className="flex">
+            <motion.div
+              className="text-blue-400"
+              drag
+              dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+            >
+              N
+            </motion.div>
+            <motion.div
+              className="text-orange-400"
+              drag
+              dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+            >
+              A
+            </motion.div>
+            <motion.div
+              className="text-purple-400"
+              drag
+              dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+            >
+              V
+            </motion.div>
+            <motion.div
+              className="text-pink-400"
+              drag
+              dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+            >
+              B
+            </motion.div>
+            <motion.div
+              className="text-yellow-400"
+              drag
+              dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+            >
+              A
+            </motion.div>
+            <motion.div
+              className="text-green-400"
+              drag
+              dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+            >
+              R
+            </motion.div>
+          </div>
         </h1>
         <div className="flex space-between">
-          <h1 className="text-1xl text-green-400">Download CV</h1>
-          <h1 className="text-1xl ml-4">
+          <motion.h1
+            drag
+            dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+            className="text-1xl text-green-400"
+          >
+            Download CV
+          </motion.h1>
+          <motion.h1
+            drag
+            dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+            className="text-1xl ml-4"
+          >
             {" "}
             <span className="text-blue-400">GitHub</span>{" "}
-          </h1>
-          <h1 className="text-1xl ml-4 text-red-400">Instagram</h1>
+          </motion.h1>
+          <motion.h1
+            drag
+            dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+            className="text-1xl ml-4 text-red-400"
+          >
+            Instagram
+          </motion.h1>
         </div>
       </div>
     </>
