@@ -5,6 +5,7 @@ import Footer from "./Components/Footer";
 import Slider from "./Components/Slider";
 import Counter from "./Components/Counter";
 import Data from "./Components/Data";
+import { motion } from "framer-motion"
 
 function App() {
   return (
